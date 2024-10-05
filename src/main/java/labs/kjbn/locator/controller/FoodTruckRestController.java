@@ -34,8 +34,8 @@ public class FoodTruckRestController {
 
     @GetMapping("/search")
     public ResponseEntity<FoodTruckResponseDto<Object>> searchFoodTrucks(@RequestParam(value = "query", required = false) String query,
-                                            @RequestParam(value = "lat", required = false) Double lat,
-                                            @RequestParam(value = "lon", required = false) Double lon,
+                                            @RequestParam(value = "lat", required = false, defaultValue = "0") Double lat,
+                                            @RequestParam(value = "lon", required = false, defaultValue = "0") Double lon,
                                             @RequestParam(value = "limit", required = false, defaultValue = "10") Integer limit,
                                             @RequestParam(value = "offset", required = false, defaultValue = "0") Integer offset,
                                             @RequestParam(value = "dayOrder", required = false, defaultValue = "1") Integer dayOrder,
