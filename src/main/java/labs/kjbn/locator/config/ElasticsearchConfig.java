@@ -1,16 +1,12 @@
 package labs.kjbn.locator.config;
 
-import org.apache.http.message.BasicHeader;
 import org.elasticsearch.client.RestClient;
-import org.elasticsearch.client.RestClientBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.elasticsearch.client.ClientConfiguration;
-import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
-import org.springframework.data.elasticsearch.support.HttpHeaders;
 
 import java.time.Duration;
 
@@ -35,9 +31,9 @@ public class ElasticsearchConfig {
     RestClient restClient;
 
     @Bean
-    public ClientConfiguration clientConfiguration()  {
+    public ClientConfiguration clientConfiguration() {
 
-        return  ClientConfiguration.builder()
+        return ClientConfiguration.builder()
                 .connectedTo(elasticsearchUri)
                 .usingSsl()
                 .withConnectTimeout(Duration.ofSeconds(5))
