@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="labs.kjbn.locator.LocatorApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-06T06:17:59" hostname="UtkarshRajsMBP" time="0.478">
+  <properties/>
+  <testcase name="contextLoads()" classname="labs.kjbn.locator.LocatorApplicationTests" time="0.478"/>
+  <system-out><![CDATA[11:47:58.014 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [labs.kjbn.locator.LocatorApplicationTests]: LocatorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:47:58.069 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration labs.kjbn.locator.LocatorApplication for test class labs.kjbn.locator.LocatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-10-06T11:47:58.238+05:30  INFO 60440 --- [locator] [    Test worker] l.kjbn.locator.LocatorApplicationTests   : Starting LocatorApplicationTests using Java 21.0.3 with PID 60440 (started by utkarshraj in /Users/utkarshraj/Downloads/locator)
+2024-10-06T11:47:58.239+05:30  INFO 60440 --- [locator] [    Test worker] l.kjbn.locator.LocatorApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-10-06T11:47:58.543+05:30  INFO 60440 --- [locator] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-10-06T11:47:58.559+05:30  INFO 60440 --- [locator] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 Elasticsearch repository interface.
+2024-10-06T11:47:59.881+05:30  INFO 60440 --- [locator] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-10-06T11:47:59.914+05:30  INFO 60440 --- [locator] [    Test worker] l.kjbn.locator.LocatorApplicationTests   : Started LocatorApplicationTests in 1.786 seconds (process running for 2.388)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/utkarshraj/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
